@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.main {
+main {
     margin:5% 0%;
     display: flex;
     flex-direction: column;
@@ -78,6 +78,8 @@ body {
     border-radius: 50%;
     margin-top: 30px;
     vertical-align:middle;
+    height: 30px;
+    width: 30px;
 }
 
 .author {
