@@ -8,7 +8,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-main {
+.container {
     margin:5% 0%;
     display: flex;
     flex-direction: column;
