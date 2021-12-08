@@ -1,0 +1,75 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+    font-size: 18px;
+}
+
+header {
+    background-image: url(/images/bg-hero-desktop.svg);
+    padding: 50px;
+    background-color: hsl(193, 100%, 96%);
+    color: hsl(192, 100%, 9%);
+}
+
+.main-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+#logo-img {
+    height: 1.2em;
+}
+
+.heading {
+    font-family: 'Poppins', sans-serif; 
+}
+
+.heading-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 1em; */
+}
+
+#service-display {
+    height: 25em;
+}
+
+.description {
+    max-width: 30%;
+}
+
+.description p {
+    font-size: 0.75em;
+    font-weight: 100;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    border: none;
+    border-radius: 2em;
+    padding: 0.9em 4em;
+    box-shadow: hsl(208, 28%, 76%) 0px 2px 4px;
+    transition: opacity 200ms ease-in-out;
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#try-it {
+    background-color: white;
+    font-weight: 700;
+}
+
+.start-free {
+    background-color: hsl(322, 100%, 66%);
+    font-weight: 700;
+    color: white;
+    margin-top: 1.5em;
+}
