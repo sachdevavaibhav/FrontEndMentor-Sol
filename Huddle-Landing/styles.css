@@ -12,6 +12,7 @@ header {
     padding: 50px;
     background-color: hsl(193, 100%, 96%);
     color: hsl(192, 100%, 9%);
+    margin-bottom: 2em;
 }
 
 .main-heading {
@@ -20,12 +21,13 @@ header {
     margin-bottom: 3em;
 }
 
-#logo-img {
+.logo-img {
     height: 1.2em;
 }
 
 .heading {
     font-family: 'Poppins', sans-serif; 
+    color: hsl(192, 100%, 9%);
 }
 
 .heading-section {
@@ -63,6 +65,7 @@ button:hover {
 }
 
 #try-it {
+    border:none;
     background-color: white;
     font-weight: 700;
 }
@@ -72,4 +75,114 @@ button:hover {
     font-weight: 700;
     color: white;
     margin-top: 1.5em;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow:hsl(208, 28%, 76%) 0px 0px 4px;
+    padding: 3em;
+    margin-bottom: 1.5em;
+}
+
+.card-desc {
+    max-width: 40%;
+}
+.card-img {
+ height: 15em;
+}
+
+.card-desc p {
+    font-weight: 400;
+    color: hsl(208, 28%, 76%);
+    font-size: 0.95em;
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+
+#footer-logo {
+    height: 2em;
+    margin-bottom: 1em;
+}
+
+.main-footer {
+    padding: 5em;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: small;
+}
+
+.container-1 {
+    max-width: 30%;
+}
+.container-1 img {
+    align-self: flex-start;
+}
+.container-4 {
+    min-width: 8em;
+    fill: white;
+    justify-content: flex-start;
+}
+
+.img {
+    float: left;
+}
+
+.container p {
+    float: right;
+}
+
+.container-4 ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.hyperlink a {
+    text-decoration: none;
+    color: white;
+}
+
+.hyperlink a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+
+.ionicon {
+    height: 1.7em;
+    transition: 200ms ease-in-out;
+}
+
+.ionicon:hover{
+    fill:hsl(322, 100%, 66%)
+}
+
+#copyright p{
+    text-align: end;
+    font-size: 0.7em;
+    /* margin-bottom: 15em; */
+    margin-top: 0;
+    display: block;
+    padding-right: 3em;
 }
