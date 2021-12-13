@@ -38,11 +38,13 @@ header {
 }
 
 #service-display {
-    height: 30em;
+    width: 75%;
+    float: right;
 }
 
 .description {
-    max-width: 30%;
+    /* width: 30%; */
+    max-width: 40%;
 }
 
 .description p {
@@ -55,6 +57,7 @@ button {
     border: none;
     border-radius: 2em;
     padding: 0.9em 4em;
+    font-size: 0.75em;
     box-shadow: hsl(208, 28%, 76%) 0px 2px 4px;
     transition: opacity 200ms ease-in-out;
 }
@@ -68,6 +71,7 @@ button:hover {
     border:none;
     background-color: white;
     font-weight: 700;
+    color: hsl(192, 100%, 9%);
 }
 
 .start-free {
@@ -104,7 +108,12 @@ button:hover {
 }
 
 .card-img {
- height: 22em;
+ width: 70%;
+ float: right;
+}
+
+.card-img-2{
+    float: left;
 }
 
 .card-desc p {
@@ -174,6 +183,7 @@ footer {
 
 .info-img {
     margin-right: 2em;
+    height: 1.5em;
 }
 
 .container-1 p {
@@ -182,7 +192,6 @@ footer {
 
 .container-4 {
     min-width: 8em;
-    fill: white;
     justify-content: flex-start;
 }
 
@@ -207,6 +216,7 @@ footer {
 .ionicon {
     height: 1.7em;
     transition: 200ms ease-in-out;
+    fill: white;
 }
 
 .ionicon:hover{
@@ -220,4 +230,180 @@ footer {
     margin-bottom: 2em;
     display: block;
     padding-right: 3em;
+}
+
+@media (max-width: 1075px) {
+    .description p {
+        font-size: 0.7em;
+    }
+    .heading {
+        font-size: 1.3em;
+    }
+    .card-desc p{
+        font-size: 0.8em;
+    }
+    button {
+        font-size: 0.7em;
+    }
+    .info p {
+        font-size: 0.8em;
+    }
+    .info-img {
+        height: 1em;
+    }
+    .ionicon {
+        height: 1.4em;
+    }
+    #copyright {
+        font-size: 1em;
+    }
+    #footer-logo {
+        height: 1.75em;
+    }
+}
+
+@media (max-width: 770px) {
+    .description p {
+        font-size: 0.6em;
+    }
+    .heading {
+        font-size: 1em;
+    }
+    .card-desc p{
+        font-size: 0.7em;
+    }
+    button {
+        font-size: 0.6em;
+    }
+    .hyperlink {
+        font-size: 0.55em;
+    }
+    .info p {
+        font-size: 0.6em;
+    }
+    .info-img {
+        height: 0.7em;
+    }
+    .ionicon {
+        height: 1.1em;
+    }
+    #copyright {
+        font-size: 0.8em;
+    }
+    #footer-logo {
+        height: 1.45em;
+    }
+}
+@media (max-width: 500px) {
+    header {
+        padding: 25px;
+    }
+    .heading-section {
+        flex-direction: column;
+    }
+    .main-heading img{
+        height: 1em;
+        margin-top: 0.3em;
+    }
+    .description {
+        max-width: 90%;
+        margin-bottom: 5em;
+        text-align: center;
+    }
+    #service-display {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+  
+    .heading {
+        font-size: 1.5em;
+    }
+    .description p {
+        font-size: 0.8em;
+    }
+    #try-it {
+        padding: 1.1em 3em;
+        font-size: 0.5em;
+    }
+    .start-free {
+        padding: 1.2em 5em;
+    }
+    .card {
+        padding: 1.5em 1.8em;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .card:nth-of-type(2) {
+        flex-direction: column;
+    }
+    .card-desc {
+        max-width: 100%;
+    }
+
+    .card-desc h2 {
+        font-size: 1.2em;
+    }
+    
+    .card-img {
+     width: 80%;
+     float: none;
+     margin-bottom: 2.5em;
+    }
+
+    #spl-card h2 {
+        font-size: 1em;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        padding: 1em;
+        padding-top: 8em;
+    }
+
+    .container-1 {
+        max-width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    #footer-logo{
+        height: 2.1em;
+    }
+    
+    .info-img {
+        margin-right: 1.2em;
+        margin-top: 0.5em;
+        height: 1.3em;
+    }
+
+    .info p {
+        font-size: 1.4em;
+    }
+
+    .hyperlink a{
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+
+    .container-4 ul {
+        justify-content: center;
+    }
+    .ionicon {
+        height: 1.7em;
+        margin: 0 0.9em;
+    }
+
+    #copyright p{
+        text-align: center;
+        padding-right: 0;
+    }
+}
+
+@media (max-width:378px) {
+    .heading {
+        font-size: 1.2em;
+    }
+    .card-desc h2 {
+        font-size: 1em;
+    }
 }
