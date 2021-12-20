@@ -7,18 +7,21 @@ body {
     font-size: 18px;
 }
 
-header {
+.huddle-intro {
     background-image: url(images/bg-hero-desktop.svg);
-    padding: 50px;
+    padding: 50px 150px;
     background-color: hsl(193, 100%, 96%);
     color: hsl(192, 100%, 9%);
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 .main-heading {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3em;
+    padding-bottom: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .logo-img {
@@ -30,15 +33,23 @@ header {
     color: hsl(192, 100%, 9%);
 }
 
-.heading-section {
+.hero-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding-top: 1em; */
+}
+.desc-container {
+    padding-top: 5.2em;
+}
+
+h1 {
+    font-size: 2em;
 }
 
 #service-display {
-    width: 75%;
+    width: 85%;
+    max-width: 100%;
+    flex-shrink: 0;
     float: right;
 }
 
@@ -84,7 +95,7 @@ button:hover {
 .middle {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 50px 150px;
     position: relative;
 }
 
@@ -95,7 +106,7 @@ button:hover {
     border: none;
     border-radius: 10px;
     box-shadow:hsl(208, 28%, 76%) 0px 0px 4px;
-    padding: 1.5em 5em;
+    padding: 1.5em 6em;
     margin-bottom: 1.5em;
 }
 
@@ -203,6 +214,12 @@ footer {
     flex-shrink: 0;
 }
 
+nav {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
 .hyperlink a {
     text-decoration: none;
     color: white;
@@ -239,6 +256,9 @@ footer {
     .heading {
         font-size: 1.3em;
     }
+    .card-heading {
+        font-size: 1em;
+    }
     .card-desc p{
         font-size: 0.8em;
     }
@@ -262,7 +282,7 @@ footer {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 860px) {
     .description p {
         font-size: 0.6em;
     }
@@ -270,10 +290,10 @@ footer {
         font-size: 1em;
     }
     .card-desc p{
-        font-size: 0.7em;
+        font-size: 0.65em;
     }
     button {
-        font-size: 0.6em;
+        font-size: 0.55em;
     }
     .hyperlink {
         font-size: 0.55em;
@@ -294,11 +314,16 @@ footer {
         height: 1.45em;
     }
 }
-@media (max-width: 500px) {
-    header {
+@media (max-width:840px) {
+    .middle {
+        padding: 50px 100px;
+    }
+}
+@media (max-width: 700px) {
+    .huddle-intro {
         padding: 25px;
     }
-    .heading-section {
+    .hero-section {
         flex-direction: column;
     }
     .main-heading img{
@@ -340,7 +365,12 @@ footer {
     .card-desc {
         max-width: 100%;
     }
-
+    .card-desc p {
+        font-size: 0.8em;
+    }
+    .middle {
+        padding: 50px 80px;
+    }
     .card-desc h2 {
         font-size: 1.2em;
     }
@@ -388,6 +418,9 @@ footer {
     .container-4 ul {
         justify-content: center;
     }
+    nav {
+        flex-direction: column;
+    }
     .ionicon {
         height: 1.7em;
         margin: 0 0.9em;
@@ -399,11 +432,14 @@ footer {
     }
 }
 
-@media (max-width:378px) {
+@media (max-width:400px) {
     .heading {
         font-size: 1.2em;
     }
     .card-desc h2 {
         font-size: 1em;
+    }
+    .middle {
+        padding: 50px;
     }
 }
