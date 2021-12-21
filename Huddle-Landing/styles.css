@@ -12,16 +12,19 @@ body {
     padding: 50px 150px;
     background-color: hsl(193, 100%, 96%);
     color: hsl(192, 100%, 9%);
-    /* margin-bottom: 2em; */
+
+}
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .main-heading {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 50px;
-    position: absolute;
-    left: 0;
-    right: 0;
 }
 
 .logo-img {
@@ -207,9 +210,7 @@ footer {
 }
 
 .container-4 ul {
-    padding: 0;
     display: flex;
-    list-style: none;
     justify-content: space-between;
     flex-shrink: 0;
 }
@@ -223,6 +224,15 @@ nav {
 .hyperlink a {
     text-decoration: none;
     color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hyperlink ul li {
+    margin-bottom: 2.5em;
 }
 
 .hyperlink a:hover {
