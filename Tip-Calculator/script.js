@@ -107,6 +107,8 @@ function reset() {
     tipPercentCustom.placeholder = 'Custom';
     tipPercentCustom.classList.remove('custom-input-click');
     numberOFPeople.value = '';
+    resultAmount[0].innerText = '$0.00';
+    resultAmount[1].innerText = '$0.00';
     if (tipPercent && tipPercent in tipPercentIndex) {
         tipPercentDiv[tipPercentIndex[tipPercent]].classList.remove('tip-input-click');
     }
