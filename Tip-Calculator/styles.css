@@ -1,0 +1,214 @@
+/* global styles */
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    box-sizing: border-box;
+}
+/* generic containers */
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 1.5em;
+    width: 50%;
+}
+
+.form-container {
+    min-width: 40%;
+}
+
+.result-container {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 2em;
+}
+ 
+p {
+    margin-top: 0;
+}
+
+
+
+/* headings */
+h2 {
+    font-weight: 400;
+    font-size: inherit;
+    margin: 0;
+    margin-bottom: 0.5em;
+    margin-top: 2.5em;
+}
+
+.heading {
+    font-size: 0.8em;
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+}
+
+.result-amount-head {
+    color: white;
+    font-size: 0.9em;
+}
+
+.main-logo {
+    margin-bottom: 2em;
+}
+
+#bill {
+    margin-top: 0;
+}
+
+/* inputs and label */
+
+.input {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    height: 2.2rem;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    color: hsl(183, 100%, 15%);
+    width: 16rem;
+}
+
+.input:focus, .input:hover {
+    outline: hsl(172, 67%, 45%) solid 2px;
+}
+
+label {
+    display: block;
+    position: relative;
+}
+
+.tip-percent {
+    background-color: hsl(183, 100%, 15%);
+    font-family: inherit;
+    color: white;
+}
+
+.tip-input div{
+    display: inline;
+    width: 2em;
+    padding: 0.5em 1.8em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tip-input div:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-input-click {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.svg-img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 0.8em;
+}
+
+.tip-percent-anchor {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.custom-input-default{
+    background-color: hsl(189, 41%, 97%);
+    /* color: hsl(180, 6%, 35%); */
+    width: 5.3em;
+    padding: 0 0.2em;
+    text-align: center;
+}
+
+.custom-input-click {
+    text-align: right;
+}
+
+/* result card */
+.result {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 22rem;
+}
+
+.result-para {
+    margin: 0;
+}
+
+.result-head {
+    margin-bottom: 3em;
+}
+
+.per-person {
+    font-size: 0.7em;
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+}
+
+.amount {
+    color: hsl(172, 67%, 45%);
+    font-size: 2em;
+    font-weight: 700;
+    text-align: right;
+}
+
+.reset {
+    align-self: center;
+}
+
+.reset-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 0.8em 10em;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1em;
+    background-color: #0d686d;
+    color: hsl(183, 100%, 15%);
+}
+
+.reset-btn-active {
+    background-color: hsl(172, 67%, 45%);
+    /* color: hsl(183, 100%, 15%); */
+}
+
+.reset-btn-active:hover {
+    background-color: hsl(185, 41%, 84%);
+    cursor: pointer;
+}
+
+
+
+
+
