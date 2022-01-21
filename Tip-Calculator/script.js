@@ -102,6 +102,8 @@ function activateReset() {
 
 function reset() {
     console.log('clicked');
+    resetButton.disabled = true;
+    resetButton.classList.remove('reset-btn-active')
     billAmount.value = '';
     tipPercentCustom.value = '';
     tipPercentCustom.placeholder = 'Custom';
@@ -112,6 +114,9 @@ function reset() {
     if (tipPercent && tipPercent in tipPercentIndex) {
         tipPercentDiv[tipPercentIndex[tipPercent]].classList.remove('tip-input-click');
     }
+    tipPercent = undefined;
+    amount = undefined;
+    people = undefined;
 }
 // Adding events
 
