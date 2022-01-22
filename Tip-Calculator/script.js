@@ -76,12 +76,29 @@ function getPeople() {
     }
 }
 
-function calculateResult() {
+function showZeroError() {
+    const errorMsg = document.createElement('p');
+    const peopleLabel = document.querySelector('#people-label');
     if (people === 0) {
-        alert("Number of people can't be 0.")
+        errorMsg.innerText = "Can't be zero";
+        errorMsg.classList.add('zero-error');
+        errorMsg.classList.add('heading');
+        numberOFPeople.classList.add('num-people-input');
+        console.dir(peopleLabel);
+        peopleLabel.parentNode.insertBefore(errorMsg, peopleLabel);
+    }
+    else {
+        const toBeRemoved = document.querySelector('.zero-error');
+        if (toBeRemoved) {
+            peopleLabel.parentElement.removeChild(toBeRemoved);
+        }
+        numberOFPeople.classList.remove('num-people-input');
     }
 
-    else if (tipPercent !== undefined && amount !== undefined && people !== undefined) {
+}
+
+function calculateResult() {
+    if (tipPercent !== undefined && amount !== undefined && people) {
         let tipAmount = (tipPercent * amount) / 100
         let totalAmount = amount + tipAmount
         resultAmount[0].innerText = `$${Math.round((tipAmount / people) * 100) / 100}`;
@@ -90,13 +107,15 @@ function calculateResult() {
 }
 
 function activateReset() {
-    if (tipPercent || amount || people) {
+    if (tipPercent !== undefined || amount !== undefined || people !== undefined) {
         resetButton.classList.add('reset-btn-active');
         resetButton.disabled = false;
     }
 
-    if (!(tipPercent || amount || people)) {
-        resetButton.classList.remove('reset-btn-active');
+    if (people !== 0) {
+        if (!(tipPercent || amount || people)) {
+            resetButton.classList.remove('reset-btn-active');
+        }
     }
 }
 
@@ -117,6 +136,7 @@ function reset() {
     tipPercent = undefined;
     amount = undefined;
     people = undefined;
+    showZeroError();
 }
 // Adding events
 
@@ -137,6 +157,7 @@ tipPercentCustom.addEventListener('blur', () => {
 billAmount.addEventListener('change', getBillAmount);
 billAmount.addEventListener('change', activateReset);
 numberOFPeople.addEventListener('change', getPeople);
+numberOFPeople.addEventListener('change', showZeroError);
 numberOFPeople.addEventListener('change', activateReset);
 resetButton.addEventListener('click', reset);
 

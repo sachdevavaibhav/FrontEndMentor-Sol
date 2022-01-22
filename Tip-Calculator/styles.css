@@ -114,7 +114,7 @@ label {
 }
 
 .tip-input div:hover {
-    background-color: hsl(185, 41%, 84%);
+    background-color: #9fe8df;
     color: hsl(183, 100%, 15%);
 }
 
@@ -152,6 +152,24 @@ label {
 
 .custom-input-click {
     text-align: right;
+}
+
+.zero-error {
+    /* display: inline-block; */
+    float: right;
+    padding-right: 2em;
+    margin: 0;
+    margin-bottom: 0.4em;
+    margin-top: 2.5em;
+    color: red;
+}
+
+.num-people-input {
+    outline: red solid 2px;
+}
+
+.num-people {
+    display: inline-block;
 }
 
 /* result card */
@@ -203,7 +221,7 @@ label {
 }
 
 .reset-btn-active:hover {
-    background-color: hsl(185, 41%, 84%);
+    background-color: #9fe8df;
     cursor: pointer;
 }
 
