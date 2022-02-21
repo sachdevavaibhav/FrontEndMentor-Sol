@@ -61,7 +61,7 @@ main {
 }
 
 .card-section{
-    max-width:25rem;
+    max-width:20rem;
 }
 
 .card {
@@ -136,5 +136,9 @@ main {
 @media(max-width:326px) {
     .advice {
         font-size: 1.5rem;
+    }
+
+    .card-container {
+        max-width: 14rem;
     }
 }
