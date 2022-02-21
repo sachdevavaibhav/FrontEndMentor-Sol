@@ -61,7 +61,7 @@ main {
 }
 
 .card-section{
-    width: 80%;
+    max-width:25rem;
 }
 
 .card {
@@ -70,6 +70,7 @@ main {
     justify-content: center;
     height: 21em;
     border-radius: 1em;
+    padding: 0 2rem;
 }
 .card-container {
     text-align: center;
